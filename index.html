@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Spense landing page</title>
+</head>
+<body>
+    <header>
+        <div class="bg-black flex justify-center items-center text-center p-4 w-full">
+            <p class="text-almostWhite ">
+                🎉 To celebrate Spense's launch, we will be walving all fess for the entire 
+                month of April. <span class="underline">You will be receiving 100% of the earnings. </span>🎉
+            </p>
+        </div>
+        <nav class="w-full px-6 py-4 bg-grayish lg:px-16">
+            <div class="flex items-center justify-between">
+                <div class="">
+                    <p class="text-black font-bold text-lg">spense.</p>
+                </div>
+                <div class="hidden md:flex space-x-6 font-bold">
+                    <a href="#" class="hover:opacity-60">Business</a>
+                    <a href="#" class="hover:opacity-60">Pricing</a>
+                    <a href="#" class="hover:opacity-60">Features</a>
+                </div>
+                <div class="hidden md:flex justify-center items-center gap-x-6">
+                    <a href="#" class="font-bold hover:opacity-60">Login</a>
+                    <button class="bg-black text-white text-sm py-3 px-5 border-none outline-none rounded-md hover:opacity-70">Get Started</button>
+                </div>
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-8 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-md">
+                    <a href="#" class="hover:opacity-60">Business</a>
+                    <a href="#" class="hover:opacity-60">Pricing</a>
+                    <a href="#" class="hover:opacity-60">Features</a>
+                    <a href="#" class="hover:opacity-60">Login</a>
+                    <button class="bg-black text-white font-normal text-sm py-3 px-5 border-none outline-none rounded-md hover:opacity-70">Get Started</button>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col justify-center items-center gap-y-8 px-6 pt-4 pb-6 bg-grayish lg:flex-row-reverse lg:gap-x-6 lg:justify-center lg:items-center lg:px-16">
+            <div class="">
+                <img src="images/Hero Image (Mobile).png" alt="" class="md:hidden">
+                <img src="images/Hero Image (Tablet).png" alt="" class="hidden md:flex lg:hidden">
+                <img src="images/Hero Image (Desktop).png" alt="" class="hidden lg:flex max-w-lg">
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <h1 class="text-4xl font-bold text-almostBlack">Share your unfiltered thoughts. Get paid.</h1>
+                <p class="font-semibold text-grayBrown opacity-90">
+                    Spense is an open platform for individuals to share their unfiltered thoughts. 
+                    Discuss the topics you love, and get paid for doing <i>just</i> that.
+                </p>
+                <div class="space-y-2">
+                    <p class="flex gap-x-4 text-lg font-bold text-grayBrown"><img src="images/Checkmark.svg" alt=""> Receive 99% off the earnings.</p>
+                    <p class="flex gap-x-4 text-lg font-bold text-grayBrown"><img src="images/Checkmark.svg" alt=""> Get paid via Debit Card, ACH, or PayPal.</p>
+                    <p class="flex gap-x-4 text-lg font-bold text-grayBrown"><img src="images/Checkmark.svg" alt=""> Withdraw your earnings anytime.</p>
+                </div>
+                <div class="form">
+                    <form action="#" class="space-x-2 space-y-2">
+                        <input type="text" placeholder="john@example.com" class="border-2 border-borderCol rounded-md py-2 px-4 text-center bg-white">
+                        <button type="submit" class="bg-black text-white text-sm py-3 px-5 border-none outline-none rounded-md">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="">
+            <div class="">
+                <div class="flex justify-center items-center px-6 py-12 space-x-4">
+                    <img src="images/Facebook Logo.png" alt="" class="w-24">
+                    <img src="images/Dribbble Logo.png" alt="" class="w-24">
+                    <img src="images/Youtube Logo.png" alt="" class="w-24">
+                    <img src="images/Pinterest Logo.png" alt="" class="w-24 hidden md:flex">
+                    <img src="images/Twitter Logo.png" alt="" class="w-24 hidden md:flex">
+                    <img src="images/Reddit Logo.png" alt="" class="w-24 hidden md:flex">
+                    <img src="images/Google Logo.png" alt="" class="w-24 hidden md:flex">
+                    <img src="images/Slack Logo.png" alt="" class="w-24 hidden lg:flex">
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center p-6 lg:px-16">
+                <div class="flex flex-col justify-center items-center pt-12 bg-grayish rounded-md">
+                    <div class="space-y-4 px-8">
+                        <h1 class="text-4xl font-bold text-almostBlack">Secure your money with Escrow.</h1>
+                        <p class="font-semibold text-grayBrown opacity-90">
+                            Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of 
+                            security for your payments, so you never need to worry about scams.
+                        </p>
+                        <p class="text-lg font-bold text-grayBrown"><a href="#">Learn more about Escrow</a></p>
+                    </div>
+                    <div class="">
+                        <img src="images/Phone Mockup (Mobile).png" alt=""  class="md:hidden">
+                        <img src="images/Phone Mockup (Tablet).png" alt="" class="hidden md:block">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col py-12 px-6 lg:flex-row-reverse lg:justify-center lg:items-center lg:px-16">
+                <div class="space-y-4">
+                    <h1 class="text-4xl font-bold text-almostBlack">A text editor like no other</h1>
+                    <p class="font-semibold text-grayBrown opacity-90">
+                        Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out 
+                        your best writings.
+                    </p>
+                    <p class="text-lg font-bold text-grayBrown"><a href="#">Text Editor Live Demo</a></p>
+                </div>
+                <div class="lg:w-3/4">
+                    <img src="images/Text Editor.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex flex-col space-y-8 bg-black px-6 py-12 md:flex-row lg:px-0 lg:gap-x-12 md:justify-center">
+            <div class="space-y-3 md:w-2/5">
+                <div class="">
+                    <p class="text-white font-bold text-lg">spense.</p>
+                </div>
+                <div class="text-white ">
+                    <p class="opacity-80  text-xs">
+                        Spense is an open platform for individuals to share their unfiltered thoughts. 
+                        Discuss the topics you love, and get paid for doing <i>just</i> that.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap space-x-12">
+                <div class="text-white space-y-3">
+                    <h1 class="text-sm">Sitemap</h1>
+                    <ul class="opacity-80 text-xs">
+                        <li><a href="#">Homepage</a></li>
+                    </ul>
+                </div>
+                <div class="text-white space-y-3">
+                    <h1 class="text-sm">Resources</h1>
+                    <ul class="opacity-80 text-xs space-y-2">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="text-white space-y-3">
+                    <h1 class="text-sm">Company</h1>
+                    <ul class="opacity-80 text-xs space-y-2">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="text-white space-y-3">
+                    <h1 class="text-sm">Opportunities</h1>
+                    <ul class="opacity-80 text-xs">
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
